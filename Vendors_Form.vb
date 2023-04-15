@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form6
+Public Class Vendors_Form
 
     Dim connection As New MySqlConnection("datasource=localhost;port=3307;username=root;password=edp123;database=sales")
 
@@ -130,4 +130,8 @@ Public Class Form6
 
     End Sub
 
+    Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
+        Me.Close()
+        Main_Menu.Show()
+    End Sub
 End Class

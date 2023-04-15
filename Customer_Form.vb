@@ -3,7 +3,7 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 Imports Mysqlx.XDevAPI.Relational
 
-Public Class Form3
+Public Class Customer_Form
     Dim connection As New MySqlConnection("server=localhost;port=3307;username=root;password=edp123;database=sales")
     Dim index As Integer
     Function execCommand(ByVal cmd As MySqlCommand) As Boolean
@@ -80,7 +80,7 @@ Public Class Form3
     End Sub
 
     Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_back.Click
-        Form2.Show()
+        Main_Menu.Show()
         Me.Close()
     End Sub
 

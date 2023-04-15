@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form6
+Partial Class Vendors_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -34,6 +34,7 @@ Partial Class Form6
         Me.btn_search = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.checkbox_password = New System.Windows.Forms.CheckBox()
+        Me.btn_back = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ven_id
@@ -119,6 +120,7 @@ Partial Class Form6
         Me.ven_password.Name = "ven_password"
         Me.ven_password.Size = New System.Drawing.Size(371, 32)
         Me.ven_password.TabIndex = 6
+        Me.ven_password.UseSystemPasswordChar = True
         '
         'btn_search
         '
@@ -150,13 +152,24 @@ Partial Class Form6
         Me.checkbox_password.TabIndex = 11
         Me.checkbox_password.Text = "Show Password"
         Me.checkbox_password.UseCompatibleTextRendering = True
-        Me.checkbox_password.UseVisualStyleBackColor = True
+        Me.checkbox_password.UseVisualStyleBackColor = False
         '
-        'Form6
+        'btn_back
+        '
+        Me.btn_back.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.btn_back.Location = New System.Drawing.Point(677, 400)
+        Me.btn_back.Name = "btn_back"
+        Me.btn_back.Size = New System.Drawing.Size(111, 38)
+        Me.btn_back.TabIndex = 12
+        Me.btn_back.Text = "Back"
+        Me.btn_back.UseVisualStyleBackColor = True
+        '
+        'Vendors_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.checkbox_password)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btn_search)
@@ -169,8 +182,8 @@ Partial Class Form6
         Me.Controls.Add(Me.ven_name)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ven_id)
-        Me.Name = "Form6"
-        Me.Text = "Form6"
+        Me.Name = "Vendors_Form"
+        Me.Text = "Vendors"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +201,5 @@ Partial Class Form6
     Friend WithEvents btn_search As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents checkbox_password As CheckBox
+    Friend WithEvents btn_back As Button
 End Class

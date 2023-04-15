@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form4
+Partial Class Sales_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -75,7 +75,7 @@ Partial Class Form4
         Me.search_box.Size = New System.Drawing.Size(541, 22)
         Me.search_box.TabIndex = 5
         '
-        'Form4
+        'Sales_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -85,7 +85,7 @@ Partial Class Form4
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_show)
         Me.Controls.Add(Me.tbl_sales)
-        Me.Name = "Form4"
+        Me.Name = "Sales_Form"
         Me.Text = "Sales"
         CType(Me.tbl_sales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

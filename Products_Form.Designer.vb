@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form5
+Partial Class Products_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -161,7 +161,7 @@ Partial Class Form5
         Me.btn_back.Text = "Back"
         Me.btn_back.UseVisualStyleBackColor = True
         '
-        'Form5
+        'Products_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -180,7 +180,7 @@ Partial Class Form5
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.prod_name)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form5"
+        Me.Name = "Products_Form"
         Me.Text = "Products"
         CType(Me.price, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.tbl_prod, System.ComponentModel.ISupportInitialize).EndInit()

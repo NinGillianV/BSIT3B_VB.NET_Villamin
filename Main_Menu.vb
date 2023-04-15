@@ -1,26 +1,31 @@
-﻿Public Class Form2
+﻿Public Class Main_Menu
     Private Sub brn_logout_Click(sender As Object, e As EventArgs) Handles brn_logout.Click
         Me.Close()
-        Form1.Show()
+        Main_Form.Show()
     End Sub
 
     Private Sub btn_customer_Click(sender As Object, e As EventArgs) Handles btn_customer.Click
         Me.Close()
-        Form3.Show()
+        Customer_Form.Show()
     End Sub
 
     Private Sub btn_sales_Click(sender As Object, e As EventArgs) Handles btn_sales.Click
         Me.Close()
-        Form4.Show()
+        Sales_Form.Show()
     End Sub
 
     Private Sub btn_product_Click(sender As Object, e As EventArgs) Handles btn_product.Click
         Me.Close()
-        Form5.Show()
+        Products_Form.Show()
     End Sub
 
     Private Sub btn_vendors_Click(sender As Object, e As EventArgs) Handles btn_vendors.Click
         Me.Close()
-        Form6.Show()
+        Vendors_Form.Show()
+    End Sub
+
+    Private Sub btn_viewer_Click(sender As Object, e As EventArgs) Handles btn_viewer.Click
+        Me.Hide()
+        Excel_editor.Show()
     End Sub
 End Class

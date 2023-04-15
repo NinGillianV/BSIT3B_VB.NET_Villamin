@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class Main_Form
     Dim connection As New MySqlConnection("server=localhost;port=3307;username=root;password=edp123;database=sales")
 
     ' show/hide password text 
@@ -48,7 +48,7 @@ Public Class Form1
         Else
 
             Me.Hide()
-            Form2.Show()
+            Main_Menu.Show()
             ven_name.Text = ""
             ven_password.Text = ""
         End If
@@ -56,5 +56,8 @@ Public Class Form1
     End Sub
 
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Me.Hide()
+    End Sub
 End Class
 

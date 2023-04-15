@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form3
+Partial Class Customer_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -164,7 +164,7 @@ Partial Class Form3
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Search"
         '
-        'Form3
+        'Customer_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -183,7 +183,7 @@ Partial Class Form3
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.prod_name)
-        Me.Name = "Form3"
+        Me.Name = "Customer_Form"
         Me.Text = "Customer"
         CType(Me.quantity, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.total, System.ComponentModel.ISupportInitialize).EndInit()

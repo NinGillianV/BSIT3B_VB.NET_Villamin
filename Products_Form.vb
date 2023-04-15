@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form5
+Public Class Products_Form
     Dim connection As New MySqlConnection("server=localhost;port=3307;username=root;password=edp123;database=sales")
     Private Sub btn_show_Click(sender As Object, e As EventArgs) Handles btn_show.Click
         Dim adapter As New MySqlDataAdapter("SELECT * FROM sales.products", connection)
@@ -40,6 +40,6 @@ Public Class Form5
 
     Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
         Me.CLose()
-        Form2.Show()
+        Main_Menu.Show()
     End Sub
 End Class
