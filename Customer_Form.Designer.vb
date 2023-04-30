@@ -36,6 +36,7 @@ Partial Class Customer_Form
         Me.Label5 = New System.Windows.Forms.Label()
         Me.search_box = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.btn_print = New System.Windows.Forms.Button()
         CType(Me.quantity, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.total, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbl_customers, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,11 +165,21 @@ Partial Class Customer_Form
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Search"
         '
+        'btn_print
+        '
+        Me.btn_print.Location = New System.Drawing.Point(436, 320)
+        Me.btn_print.Name = "btn_print"
+        Me.btn_print.Size = New System.Drawing.Size(114, 43)
+        Me.btn_print.TabIndex = 18
+        Me.btn_print.Text = "Print"
+        Me.btn_print.UseVisualStyleBackColor = True
+        '
         'Customer_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_print)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.search_box)
         Me.Controls.Add(Me.Label5)
@@ -207,4 +218,5 @@ Partial Class Customer_Form
     Friend WithEvents Label5 As Label
     Friend WithEvents search_box As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents btn_print As Button
 End Class

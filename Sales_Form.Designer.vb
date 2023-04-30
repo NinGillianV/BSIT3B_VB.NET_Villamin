@@ -27,6 +27,7 @@ Partial Class Sales_Form
         Me.btn_back = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.search_box = New System.Windows.Forms.TextBox()
+        Me.btn_print = New System.Windows.Forms.Button()
         CType(Me.tbl_sales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,11 +76,21 @@ Partial Class Sales_Form
         Me.search_box.Size = New System.Drawing.Size(541, 22)
         Me.search_box.TabIndex = 5
         '
+        'btn_print
+        '
+        Me.btn_print.Location = New System.Drawing.Point(328, 368)
+        Me.btn_print.Name = "btn_print"
+        Me.btn_print.Size = New System.Drawing.Size(137, 45)
+        Me.btn_print.TabIndex = 6
+        Me.btn_print.Text = "Print"
+        Me.btn_print.UseVisualStyleBackColor = True
+        '
         'Sales_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_print)
         Me.Controls.Add(Me.search_box)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_back)
@@ -98,4 +109,5 @@ Partial Class Sales_Form
     Friend WithEvents btn_back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents search_box As TextBox
+    Friend WithEvents btn_print As Button
 End Class

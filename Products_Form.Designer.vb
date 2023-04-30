@@ -36,6 +36,7 @@ Partial Class Products_Form
         Me.btn_add = New System.Windows.Forms.Button()
         Me.btn_show = New System.Windows.Forms.Button()
         Me.btn_back = New System.Windows.Forms.Button()
+        Me.btn_print = New System.Windows.Forms.Button()
         CType(Me.price, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.tbl_prod, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.stock, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -95,7 +96,7 @@ Partial Class Products_Form
         'tbl_prod
         '
         Me.tbl_prod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.tbl_prod.Location = New System.Drawing.Point(274, 97)
+        Me.tbl_prod.Location = New System.Drawing.Point(298, 97)
         Me.tbl_prod.Name = "tbl_prod"
         Me.tbl_prod.RowHeadersWidth = 51
         Me.tbl_prod.RowTemplate.Height = 24
@@ -145,7 +146,7 @@ Partial Class Products_Form
         '
         'btn_show
         '
-        Me.btn_show.Location = New System.Drawing.Point(274, 362)
+        Me.btn_show.Location = New System.Drawing.Point(298, 362)
         Me.btn_show.Name = "btn_show"
         Me.btn_show.Size = New System.Drawing.Size(137, 34)
         Me.btn_show.TabIndex = 12
@@ -154,18 +155,28 @@ Partial Class Products_Form
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(578, 362)
+        Me.btn_back.Location = New System.Drawing.Point(602, 362)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(139, 34)
         Me.btn_back.TabIndex = 13
         Me.btn_back.Text = "Back"
         Me.btn_back.UseVisualStyleBackColor = True
         '
+        'btn_print
+        '
+        Me.btn_print.Location = New System.Drawing.Point(566, 50)
+        Me.btn_print.Name = "btn_print"
+        Me.btn_print.Size = New System.Drawing.Size(175, 36)
+        Me.btn_print.TabIndex = 14
+        Me.btn_print.Text = "Print"
+        Me.btn_print.UseVisualStyleBackColor = True
+        '
         'Products_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btn_print)
         Me.Controls.Add(Me.btn_back)
         Me.Controls.Add(Me.btn_show)
         Me.Controls.Add(Me.btn_add)
@@ -204,4 +215,5 @@ Partial Class Products_Form
     Friend WithEvents btn_add As Button
     Friend WithEvents btn_show As Button
     Friend WithEvents btn_back As Button
+    Friend WithEvents btn_print As Button
 End Class
